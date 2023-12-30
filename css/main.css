@@ -39,11 +39,11 @@
 @import url("micons/micons.css");
 
 /** 
- * ===================================================================
- * 02. base style overrides - (_document-setup.scss)
- *
- * ------------------------------------------------------------------- 
- */
+  * ===================================================================
+  * 02. base style overrides - (_document-setup.scss)
+  *
+  * ------------------------------------------------------------------- 
+  */
 html {
   font-size: 10px;
 }
@@ -77,9 +77,9 @@ body {
 }
 
 /**
- * links - (_document-setup.scss)
- * -------------------------------------------------------------------
- */
+  * links - (_document-setup.scss)
+  * -------------------------------------------------------------------
+  */
 a,
 a:visited {
   color: #000000;
@@ -97,11 +97,11 @@ a:active {
 }
 
 /** 
- * ===================================================================
- * 03. typography & general theme styles - (_document-setup.scss)
- *
- * ------------------------------------------------------------------- 
- */
+  * ===================================================================
+  * 03. typography & general theme styles - (_document-setup.scss)
+  *
+  * ------------------------------------------------------------------- 
+  */
 h1,
 h2,
 h3,
@@ -305,9 +305,9 @@ hr {
 }
 
 /**
- * Lists - (_document-setup.scss)  
- * -------------------------------------------------------------------
- */
+  * Lists - (_document-setup.scss)  
+  * -------------------------------------------------------------------
+  */
 ol {
   list-style: decimal;
 }
@@ -357,9 +357,9 @@ dd {
 }
 
 /**
- * tables - (_document-setup.scss)  
- * -------------------------------------------------------------------
- */
+  * tables - (_document-setup.scss)  
+  * -------------------------------------------------------------------
+  */
 table {
   border-width: 0;
   width: 100%;
@@ -393,9 +393,9 @@ td:last-child {
 }
 
 /**
- * Spacing - (_document-setup.scss)  
- * -------------------------------------------------------------------
- */
+  * Spacing - (_document-setup.scss)  
+  * -------------------------------------------------------------------
+  */
 button,
 .button {
   margin-bottom: 1.2;
@@ -421,9 +421,9 @@ form,
 }
 
 /**
- * floated image - (_document-setup.scss)  
- * -------------------------------------------------------------------
- */
+  * floated image - (_document-setup.scss)  
+  * -------------------------------------------------------------------
+  */
 img.pull-right {
   margin: 0.9rem 0 0 2.4rem;
 }
@@ -432,9 +432,9 @@ img.pull-left {
 }
 
 /**
- * block grid paddings - (_document-setup.scss) 
- * -------------------------------------------------------------------
- */
+  * block grid paddings - (_document-setup.scss) 
+  * -------------------------------------------------------------------
+  */
 .bgrid {
   padding: 0 20px;
 }
@@ -460,9 +460,9 @@ img.pull-left {
 }
 
 /**
- * pace.js styles - minimal  - (_document-setup.scss)
- * -------------------------------------------------------------------
- */
+  * pace.js styles - minimal  - (_document-setup.scss)
+  * -------------------------------------------------------------------
+  */
 .pace {
   -webkit-pointer-events: none;
   pointer-events: none;
@@ -484,11 +484,11 @@ img.pull-left {
 }
 
 /** 
- * ===================================================================
- * 04. preloader - (_preloader-1.scss)
- *
- * ------------------------------------------------------------------- 
- */
+  * ===================================================================
+  * 04. preloader - (_preloader-1.scss)
+  *
+  * ------------------------------------------------------------------- 
+  */
 #preloader {
   position: fixed;
   top: 0;
@@ -548,11 +548,11 @@ img.pull-left {
 }
 
 /** 
- * ===================================================================
- * 05. forms - (_forms.scss)
- *
- * ------------------------------------------------------------------- 
- */
+  * ===================================================================
+  * 05. forms - (_forms.scss)
+  *
+  * ------------------------------------------------------------------- 
+  */
 fieldset {
   border: none;
 }
@@ -669,9 +669,9 @@ label > input[type="radio"] {
 }
 
 /**
- * Style Placeholder Text  
- * -
- */
+  * Style Placeholder Text  
+  * -
+  */
 ::-webkit-input-placeholder {
   color: #a1a1a1;
 }
@@ -689,11 +689,11 @@ label > input[type="radio"] {
 }
 
 /** 
- * ===================================================================
- * 06. buttons - (_button-essentials.scss)
- *
- * ------------------------------------------------------------------- 
- */
+  * ===================================================================
+  * 06. buttons - (_button-essentials.scss)
+  *
+  * ------------------------------------------------------------------- 
+  */
 .button,
 a.button,
 button,
@@ -802,16 +802,16 @@ input::-moz-focus-inner {
 }
 
 /** 
- * ===================================================================
- * 07. other components - (_others.scss)
- *
- * ------------------------------------------------------------------- 
- */
+  * ===================================================================
+  * 07. other components - (_others.scss)
+  *
+  * ------------------------------------------------------------------- 
+  */
 
 /**
- * alert box - (_alert-box.scss)
- * -------------------------------------------------------------------
- */
+  * alert box - (_alert-box.scss)
+  * -------------------------------------------------------------------
+  */
 .alert-box {
   padding: 2.1rem 4rem 2.1rem 3rem;
   position: relative;
@@ -844,13 +844,13 @@ input::-moz-focus-inner {
 }
 
 /**
- * additional typo styles - (_additional-typo.scss)
- * -------------------------------------------------------------------
- */
+  * additional typo styles - (_additional-typo.scss)
+  * -------------------------------------------------------------------
+  */
 
 /**
- * drop cap 
- */
+  * drop cap 
+  */
 .drop-cap:first-letter {
   float: left;
   margin: 0;
@@ -864,8 +864,8 @@ input::-moz-focus-inner {
 }
 
 /**
- * line definition style
- */
+  * line definition style
+  */
 .lining dt,
 .lining dd {
   display: inline;
@@ -888,8 +888,8 @@ input::-moz-focus-inner {
 }
 
 /**
- * dictionary definition style
- */
+  * dictionary definition style
+  */
 .dictionary-style dt {
   display: inline;
   counter-reset: definitions;
@@ -907,18 +907,18 @@ input::-moz-focus-inner {
 }
 
 /** 
- * Pull Quotes
- * -----------
- * markup:
- *
- * <aside class="pull-quote">
- *		<blockquote>
- *			<p></p>
- *		</blockquote>
- *	</aside>
- *
- * --------------------------------------------------------------------- 
- */
+  * Pull Quotes
+  * -----------
+  * markup:
+  *
+  * <aside class="pull-quote">
+  *		<blockquote>
+  *			<p></p>
+  *		</blockquote>
+  *	</aside>
+  *
+  * --------------------------------------------------------------------- 
+  */
 .pull-quote {
   position: relative;
   padding: 2.1rem 3rem 2.1rem 0px;
@@ -949,18 +949,18 @@ input::-moz-focus-inner {
 }
 
 /** 
- * insights Tab
- * ---------
- * markup:
- *
- * <ul class="insights-tabs">
- *		<li><a href="#">[value]<em>[name]</em></a></li>
- *	</ul>
- *
- * Extend this object into your markup.
- *
- * ---------------------------------------------------------------------
- */
+  * insights Tab
+  * ---------
+  * markup:
+  *
+  * <ul class="insights-tabs">
+  *		<li><a href="#">[value]<em>[name]</em></a></li>
+  *	</ul>
+  *
+  * Extend this object into your markup.
+  *
+  * ---------------------------------------------------------------------
+  */
 .insights-tabs {
   padding: 0;
   margin: 3rem 0;
@@ -995,9 +995,9 @@ input::-moz-focus-inner {
 }
 
 /**
- * skillbars - (_skillbars.scss)
- * -------------------------------------------------------------------
- */
+  * skillbars - (_skillbars.scss)
+  * -------------------------------------------------------------------
+  */
 .skill-bars {
   list-style: none;
   margin: 6rem 0 3rem;
@@ -1112,11 +1112,11 @@ input::-moz-focus-inner {
 }
 
 /** 
- * ===================================================================
- * 08. common styles (_layout.scss)
- *
- * ------------------------------------------------------------------- 
- */
+  * ===================================================================
+  * 08. common styles (_layout.scss)
+  *
+  * ------------------------------------------------------------------- 
+  */
 .grey-section {
   background: #ebebeb;
 }
@@ -1147,10 +1147,10 @@ input::-moz-focus-inner {
 }
 
 /**
- * responsive:
- * common styles
- * ------------------------------------------------------------------- 
- */
+  * responsive:
+  * common styles
+  * ------------------------------------------------------------------- 
+  */
 @media only screen and (max-width: 768px) {
   .section-intro {
     max-width: 650px;
@@ -1175,11 +1175,11 @@ input::-moz-focus-inner {
 }
 
 /** 
- * ===================================================================
- * 09. header styles - (_layout.scss)
- *
- * ------------------------------------------------------------------- 
- */
+  * ===================================================================
+  * 09. header styles - (_layout.scss)
+  *
+  * ------------------------------------------------------------------- 
+  */
 header {
   position: fixed;
   width: 100%;
@@ -1221,9 +1221,9 @@ header .logo a {
 }
 
 /**
- * menu toggle - (_layout.css)
- * ------------------------------------------------------------------- 
- */
+  * menu toggle - (_layout.css)
+  * ------------------------------------------------------------------- 
+  */
 .menu-toggle {
   float: left;
   width: 40px;
@@ -1360,10 +1360,10 @@ header .logo a {
 }
 
 /**
- * responsive:
- * header styles
- * --------------------------------------------------------------- 
- */
+  * responsive:
+  * header styles
+  * --------------------------------------------------------------- 
+  */
 @media only screen and (max-width: 1024px) {
   header .top-bar {
     left: 60px;
@@ -1386,13 +1386,13 @@ header .logo a {
 }
 
 /** 
- * ===================================================================
- * 10. intro - (_layout.scss) 
- *
- * ------------------------------------------------------------------- 
- */
+  * ===================================================================
+  * 10. intro - (_layout.scss) 
+  *
+  * ------------------------------------------------------------------- 
+  */
 #intro {
-  background: #151515 url(../img/intro-bg.jpg) no-repeat center bottom;
+  background: #151515 url(../img/bg.jpg) no-repeat center bottom;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   background-size: cover;
@@ -1521,10 +1521,10 @@ header .logo a {
 }
 
 /**
- * responsive:
- * Intro
- * --------------------------------------------------------------- 
- */
+  * responsive:
+  * Intro
+  * --------------------------------------------------------------- 
+  */
 @media only screen and (max-width: 1024px) {
   .intro-content h1 {
     font-size: 7.6rem;
@@ -1585,11 +1585,11 @@ header .logo a {
 }
 
 /** 
- * ===================================================================
- * 11. about - (_layout.scss)
- *
- * ------------------------------------------------------------------- 
- */
+  * ===================================================================
+  * 11. about - (_layout.scss)
+  *
+  * ------------------------------------------------------------------- 
+  */
 #about {
   background: #ffffff;
   padding-top: 12rem;
@@ -1666,10 +1666,10 @@ header .logo a {
 }
 
 /**
- * responsive:
- * about
- * ------------------------------------------------------------------- 
- */
+  * responsive:
+  * about
+  * ------------------------------------------------------------------- 
+  */
 @media only screen and (max-width: 1024px) {
   .intro-info {
     margin-right: 0;
@@ -1717,11 +1717,11 @@ header .logo a {
 }
 
 /** 
- * ===================================================================
- * 12. resume - (_layout.scss)
- *
- * ------------------------------------------------------------------- 
- */
+  * ===================================================================
+  * 12. resume - (_layout.scss)
+  *
+  * ------------------------------------------------------------------- 
+  */
 #resume {
   padding-top: 12rem;
   padding-bottom: 12rem;
@@ -1809,10 +1809,10 @@ header .logo a {
 }
 
 /**
- * responsive:
- * resume
- * ------------------------------------------------------------------- 
- */
+  * responsive:
+  * resume
+  * ------------------------------------------------------------------- 
+  */
 @media only screen and (max-width: 1024px) {
   #resume .timeline-header {
     padding-right: 50px;
@@ -1887,11 +1887,11 @@ header .logo a {
 }
 
 /** 
- * ===================================================================
- * 13. portfolio - (_layout.scss)
- *
- * ------------------------------------------------------------------- 
- */
+  * ===================================================================
+  * 13. portfolio - (_layout.scss)
+  *
+  * ------------------------------------------------------------------- 
+  */
 #portfolio {
   background: #ffffff;
   padding-top: 12rem;
@@ -1971,10 +1971,10 @@ header .logo a {
 }
 
 /**
- * responsive:
- * portfolio
- * ------------------------------------------------------------------- 
- */
+  * responsive:
+  * portfolio
+  * ------------------------------------------------------------------- 
+  */
 @media only screen and (max-width: 1024px) {
   #portfolio .folio-title {
     font-size: 3.1rem;
@@ -1992,9 +1992,9 @@ header .logo a {
 }
 
 /**
- * Popup Modal - (_layout.scss)
- * ------------------------------------------------------------------
- */
+  * Popup Modal - (_layout.scss)
+  * ------------------------------------------------------------------
+  */
 .popup-modal {
   max-width: 550px;
   background: #ffffff;
@@ -2070,9 +2070,9 @@ header .logo a {
 }
 
 /**
- * transition effect for modal popup - (_layout.scss)
- * ------------------------------------------------------------------ 
- */
+  * transition effect for modal popup - (_layout.scss)
+  * ------------------------------------------------------------------ 
+  */
 
 /* overlay at start */
 .mfp-fade.mfp-bg {
@@ -2124,11 +2124,11 @@ header .logo a {
 }
 
 /** 
- * ===================================================================
- * 14. call-to-action section - (_layout.scss)
- *
- * ------------------------------------------------------------------- 
- */
+  * ===================================================================
+  * 14. call-to-action section - (_layout.scss)
+  *
+  * ------------------------------------------------------------------- 
+  */
 #blog {
   padding-top: 10.2rem;
   padding-bottom: 9rem;
@@ -2161,79 +2161,8 @@ header .logo a {
   display: block;
 }
 
-.title-blog {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  text-align: center;
-  opacity: 0;
-  transition: opacity 0.3s;
-  color: #fff; /* Warna teks sesuai kebutuhan */
-}
-
 .col-four:hover .title-blog {
   opacity: 1;
-}
-.col-four {
-  position: relative;
-  overflow: hidden;
-}
-
-.col-four img {
-  width: 100%;
-  height: auto;
-  display: block;
-}
-
-.title-blog {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  text-align: center;
-  opacity: 0;
-  transition: opacity 0.3s;
-  color: #fff; /* Warna teks sesuai kebutuhan */
-}
-
-.col-four:hover .title-blog {
-  opacity: 1;
-}
-.col-four {
-  position: relative;
-  overflow: hidden;
-}
-
-.col-four img {
-  width: 100%;
-  height: auto;
-  display: block;
-}
-
-.title-blog {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  text-align: center;
-  opacity: 0;
-  transition: opacity 0.3s;
-  color: #fff; /* Warna teks sesuai kebutuhan */
-}
-
-.col-four:hover .title-blog {
-  opacity: 1;
-}
-.col-four {
-  position: relative;
-  overflow: hidden;
-}
-
-.col-four img {
-  width: 100%;
-  height: auto;
-  display: block;
 }
 
 .title-blog {
@@ -2248,18 +2177,57 @@ header .logo a {
   font-weight: bold; /* Menjadikan tulisan lebih tebal */
 }
 
-.col-four:hover .title-blog {
-  opacity: 1;
-}
-
 .col-four:hover .title-blog a {
   color: #0ce600; /* Warna teks saat hover */
 }
 
+/* Tata letak untuk perangkat seluler dengan lebar maksimum 600px */
+@media (max-width: 600px) {
+  #blog {
+    padding-top: 6rem;
+    padding-bottom: 6rem;
+  }
+
+  .col-four {
+    width: 100%;
+    margin-bottom: 2rem;
+  }
+
+  .title-blog {
+    top: 50%;
+    font-size: 16px;
+  }
+
+  .blog-thumb img {
+    height: 5rem;
+    width: 5rem;
+  }
+
+  .action {
+    display: none; /* Menghilangkan tombol "Discover More" */
+  }
+
+  .lead,
+  .title-blog a {
+    display: none; /* Menghilangkan penjelasan dan link tulisan */
+  }
+}
+
+/* Menghilangkan teks dan tombol pada perangkat dengan lebar antara 601px dan 1024px (tablet) */
+@media (min-width: 601px) and (max-width: 1024px) {
+  .title-blog {
+    display: none; /* Menghilangkan judul */
+  }
+
+  .action {
+    display: none; /* Menghilangkan tombol "Discover More" */
+  }
+}
+
 /**
- * section ads - (_layout.scss)
- * ------------------------------------------------------------------- 
- */
+  * section ads - (_layout.scss)
+  * ------------------------------------------------------------------- 
+  */
 .section-ads h2 {
   position: relative;
   padding-bottom: 2.1rem;
@@ -2284,10 +2252,10 @@ header .logo a {
 }
 
 /**
- * responsive:
- * blog
- * -------------------------------------------------------------------
- */
+  * responsive:
+  * blog
+  * -------------------------------------------------------------------
+  */
 @media only screen and (max-width: 650px) {
   .blog-content {
     max-width: 650px;
@@ -2298,13 +2266,13 @@ header .logo a {
 }
 
 /** 
- * ===================================================================
- * 15. services - (_layout.scss)
- *
- * ------------------------------------------------------------------- 
- */
+  * ===================================================================
+  * 15. services - (_layout.scss)
+  *
+  * ------------------------------------------------------------------- 
+  */
 #services {
-  background: #313131 url(../images/bg.jpg) no-repeat center;
+  background: #313131 url(../img/bg.jpg) no-repeat center;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   background-size: cover;
@@ -2385,11 +2353,11 @@ header .logo a {
 }
 
 /** 
- * ===================================================================
- * 16. insights - (_layout.scss)
- *
- * ------------------------------------------------------------------- 
- */
+  * ===================================================================
+  * 16. insights - (_layout.scss)
+  *
+  * ------------------------------------------------------------------- 
+  */
 #insights {
   background: #009940;
   padding-top: 7.2rem;
@@ -2423,10 +2391,10 @@ header .logo a {
 }
 
 /**
- * responsive:
- * insights
- * -------------------------------------------------------------------
- */
+  * responsive:
+  * insights
+  * -------------------------------------------------------------------
+  */
 @media only screen and (max-width: 1024px) {
   #insights .stat:nth-child(n) {
     border-left: 1px solid rgba(255, 255, 255, 0.12);
@@ -2451,11 +2419,11 @@ header .logo a {
 }
 
 /** 
- * ===================================================================
- * 17. contact - (_layout.scss)
- *
- * ------------------------------------------------------------------- 
- */
+  * ===================================================================
+  * 17. contact - (_layout.scss)
+  *
+  * ------------------------------------------------------------------- 
+  */
 #contact {
   background: #151515;
   padding-top: 12rem;
@@ -2640,9 +2608,9 @@ header .logo a {
 }
 
 /**
- * loader animation - (_layout.scss)
- * --------------------------------------------------------------- 
- */
+  * loader animation - (_layout.scss)
+  * --------------------------------------------------------------- 
+  */
 .s-loader {
   margin: 1.2rem auto 3rem;
   width: 70px;
@@ -2699,11 +2667,11 @@ header .logo a {
 }
 
 /** 
- * ===================================================================
- * 18. footer - (_layout.scss)
- *
- * ------------------------------------------------------------------- 
- */
+  * ===================================================================
+  * 18. footer - (_layout.scss)
+  *
+  * ------------------------------------------------------------------- 
+  */
 footer {
   padding-bottom: 3rem;
   font-size: 1.4rem;
@@ -2753,10 +2721,10 @@ footer .copyright span:last-child::after {
 }
 
 /**
- * responsive:
- * footer
- * -------------------------------------------------------------------
- */
+  * responsive:
+  * footer
+  * -------------------------------------------------------------------
+  */
 @media only screen and (max-width: 768px) {
   footer {
     text-align: center;
@@ -2776,9 +2744,9 @@ footer .copyright span:last-child::after {
 }
 
 /**
- * go to top - (_layout.scss)
- * ------------------------------------------------------------------- 
- */
+  * go to top - (_layout.scss)
+  * ------------------------------------------------------------------- 
+  */
 #go-top {
   position: fixed;
   bottom: 0;
