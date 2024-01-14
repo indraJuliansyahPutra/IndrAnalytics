@@ -2309,7 +2309,14 @@ header .logo a {
 }
 .services-list {
   margin-top: 1.2rem;
-  text-align: center;
+}
+.course {
+  color: rgba(255, 255, 255, 0.7);
+  margin-bottom: 0%;
+}
+.course-date {
+  color: rgba(255, 255, 255, 0.5);
+  margin-top: 0;
 }
 .services-list .service {
   margin-bottom: 1.2rem;
@@ -2362,7 +2369,7 @@ header .logo a {
   text-align: center;
   text-decoration: none;
   border-radius: 4px;
-  transition: background-color 0.3s, transform 0.3s; /* Added transform property for animation */
+  transition: background-color 0.3s, transform 0.3s;
 }
 
 .certificate-button:hover {
