@@ -1518,6 +1518,17 @@ header .logo a {
 .intro-social li a:hover,
 .intro-social li a:focus {
   color: #00cc33;
+  transform: scale(1.2);
+}
+
+/* Animasi untuk ikon di dalam tag <i> */
+.intro-social a i {
+  display: inline-block;
+  transition: transform 0.3s ease-in-out;
+}
+
+.intro-social a:hover i {
+  transform: rotate(360deg);
 }
 
 /**
@@ -1806,6 +1817,42 @@ header .logo a {
   position: absolute;
   left: 0;
   bottom: 0;
+}
+
+/* Desain untuk bagian resume */
+.grey-section {
+  background-color: #f5f5f5; /* Ganti dengan warna latar belakang yang diinginkan */
+  padding: 80px 0;
+}
+
+.section-intro h1,
+.timeline-header h2 {
+  color: #333; /* Ganti dengan warna teks yang diinginkan */
+}
+
+.resume-timeline {
+  margin-top: 40px;
+}
+
+.timeline-ico {
+  background-color: #ff6600; /* Ganti dengan warna ikon yang diinginkan */
+}
+
+.timeline-header h3,
+.timeline-header p,
+.timeline-content h4 {
+  color: #333; /* Ganti dengan warna teks yang diinginkan */
+}
+
+.timeline-content p {
+  color: #666; /* Ganti dengan warna teks yang diinginkan */
+}
+
+/* Efek hover pada timeline block */
+.timeline-block:hover {
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+  transform: scale(1.02);
+  transition: box-shadow 0.3s ease-in-out, transform 0.3s ease-in-out;
 }
 
 /**
@@ -2181,6 +2228,101 @@ header .logo a {
   color: #0ce600; /* Warna teks saat hover */
 }
 
+/* Desain untuk bagian blog */
+.grey-section {
+  background-color: #f5f5f5; /* Ganti dengan warna latar belakang yang diinginkan */
+  padding: 80px 0;
+}
+
+.section-intro h1,
+.section-intro p {
+  color: #333; /* Ganti dengan warna teks yang diinginkan */
+}
+
+/* Desain untuk setiap blog entry */
+.section-ads {
+  background-color: #fff; /* Ganti dengan warna latar belakang yang diinginkan */
+  border-radius: 8px;
+  overflow: hidden;
+  margin-bottom: 40px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+  width: calc(
+    33.33% - 20px
+  ); /* 33.33% untuk tiga kolom, dikurangi 20px untuk jarak horizontal */
+  margin-right: 20px;
+  float: left;
+}
+
+@media only screen and (max-width: 1200px) {
+  .section-ads {
+    width: calc(
+      50% - 20px
+    ); /* 50% untuk dua kolom pada layar berukuran lebih kecil dari 1200px */
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .section-ads {
+    width: 50%; /* Mengisi lebar pada layar yang lebih kecil dari 768px */
+    margin-right: 0;
+  }
+}
+
+.section-ads:last-child {
+  margin-right: 0; /* Menghapus margin-right pada kotak terakhir */
+}
+
+.section-ads:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+/* Desain untuk gambar blog entry */
+.section-ads img {
+  max-width: 100%;
+  height: auto;
+  border-bottom: 1px solid #ddd; /* Garis pemisah untuk gambar */
+}
+
+/* Desain untuk judul blog entry */
+.title-blog {
+  padding: 20px;
+}
+
+.title-blog a {
+  font-size: 1.2em;
+  color: #333; /* Ganti dengan warna teks yang diinginkan */
+  text-decoration: none;
+  transition: color 0.3s ease-in-out;
+}
+
+.title-blog a:hover {
+  color: #ff6600; /* Ganti dengan warna yang diinginkan saat dihover */
+}
+
+/* Desain untuk teks lead dan tombol blog entry */
+.lead,
+.action {
+  padding: 0 20px 20px;
+}
+
+.button-primary {
+  display: inline-block;
+  padding: 10px 20px;
+  font-size: 1em;
+  text-align: center;
+  text-decoration: none;
+  color: #fff; /* Ganti dengan warna teks tombol yang diinginkan */
+  background-color: #ff6600; /* Ganti dengan warna latar belakang tombol yang diinginkan */
+  border-radius: 4px;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.button-primary:hover {
+  background-color: #333; /* Ganti dengan warna latar belakang tombol saat dihover */
+}
+
 /* Tata letak untuk perangkat seluler dengan lebar maksimum 600px */
 @media (max-width: 600px) {
   #blog {
@@ -2204,23 +2346,22 @@ header .logo a {
   }
 
   .action {
-    display: none; /* Menghilangkan tombol "Discover More" */
+    margin-bottom: auto; /* Menghilangkan tombol "Discover More" */
   }
 
   .lead,
   .title-blog a {
-    display: none; /* Menghilangkan penjelasan dan link tulisan */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%; /* Menyesuaikan tinggi agar tulisan tetap berada di tengah */
   }
 }
 
 /* Menghilangkan teks dan tombol pada perangkat dengan lebar antara 601px dan 1024px (tablet) */
 @media (min-width: 601px) and (max-width: 1024px) {
-  .title-blog {
-    display: none; /* Menghilangkan judul */
-  }
-
-  .action {
-    display: none; /* Menghilangkan tombol "Discover More" */
+  .title-blog a {
+    font-size: 16px;
   }
 }
 
@@ -2365,7 +2506,6 @@ header .logo a {
   display: block;
   padding: 10px 15px;
   background-color: #4caf50; /* Green background color */
-  color: #fff;
   text-align: center;
   text-decoration: none;
   border-radius: 4px;
@@ -2788,6 +2928,37 @@ footer .copyright span::after {
 }
 footer .copyright span:last-child::after {
   display: none;
+}
+
+/* Animasi ikon media sosial di footer */
+.footer-social li {
+  display: inline-block;
+  margin: 0 10px;
+  transition: transform 0.3s ease-in-out;
+}
+
+.footer-social li:hover {
+  transform: translateY(-10px) scale(1.2);
+}
+
+/* Animasi ikon di dalam tag <i> di footer */
+.footer-social a i {
+  display: inline-block;
+  transition: transform 0.3s ease-in-out;
+}
+
+.footer-social a:hover i {
+  transform: scale(1.5);
+}
+
+/* Animasi untuk copyright dan link di footer */
+.copyright a {
+  color: #333; /* Ganti dengan warna yang diinginkan untuk link */
+  transition: color 0.3s ease-in-out;
+}
+
+.copyright a:hover {
+  color: #ff6600; /* Ganti dengan warna yang diinginkan saat dihover */
 }
 
 /**
