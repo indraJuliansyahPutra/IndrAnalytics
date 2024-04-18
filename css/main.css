@@ -1709,14 +1709,14 @@ header .logo a {
   transform: scale(1.2);
 }
 
-/* Animasi untuk ikon di dalam tag <i> */
+/* Animasi ikon di dalam tag <i> di intro */
 .intro-social a i {
   display: inline-block;
-  transition: transform 0.3s ease-in-out;
+  transition: transform 0.5s ease-in-out;
 }
 
 .intro-social a:hover i {
-  transform: rotate(360deg);
+  transform: scale(1.5);
 }
 
 /**
@@ -3383,14 +3383,14 @@ footer .copyright span:last-child::after {
   transform: translateY(-10px) scale(1.2);
 }
 
-/* Animasi ikon di dalam tag <i> di footer */
+/* Animasi untuk ikon di dalam tag <i> */
 .footer-social a i {
   display: inline-block;
-  transition: transform 0.3s ease-in-out;
+  transition: transform 0.5s ease-in-out;
 }
 
 .footer-social a:hover i {
-  transform: scale(1.5);
+  transform: rotate(360deg);
 }
 
 /* Animasi untuk copyright dan link di footer */
