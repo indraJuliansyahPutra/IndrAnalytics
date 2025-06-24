@@ -274,6 +274,144 @@ nav .nav-links a:hover {
   background-color: #000;
 }
 
+/* Certificate Section */
+#certificates {
+  padding: 100px 50px;
+  background: #000;
+  color: #00ffe7;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.certificates-wrapper {
+  position: relative;
+  width: 80%;
+  max-width: 500px;
+  overflow: hidden;
+  border-radius: 15px;
+}
+
+.certificates-container {
+  display: flex;
+  transition: transform 0.5s ease;
+}
+
+.certificate-card {
+  min-width: 100%;
+  background: rgba(0, 255, 231, 0.1);
+  border: 2px solid #00ffe7;
+  border-radius: 15px;
+  box-shadow: 0 0 15px #00ffe7;
+  backdrop-filter: blur(4px);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+}
+
+.certificate-card img {
+  width: 100%;
+  aspect-ratio: 4 / 3;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.certificate-info {
+  margin-top: 10px;
+  text-align: center;
+  color: #00ffe7;
+}
+
+.certificate-info p{
+  color: #00ff88;
+}
+
+.certificate-info p:last-of-type {
+  margin-bottom: 15px; /* atau nilai yang kamu mau */
+}
+
+/* Indicator Dots */
+.indicator-dots {
+  margin-top: 25px;
+  text-align: center;
+}
+
+.indicator-dots .dot {
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  margin: 0 5px;
+  background-color: #00ffe7;
+  border-radius: 50%;
+  opacity: 0.5;
+  cursor: pointer;
+  transition: opacity 0.3s;
+}
+
+.indicator-dots .dot.active {
+  opacity: 1;
+  background-color: #00ff88;
+}
+
+/* Blog Section */
+#blog {
+  padding: 100px 50px;
+  background: #000;
+  color: #00ffe7;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.blog-wrapper {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 30px;
+  width: 80%;
+  max-width: 1000px;
+}
+
+.blog-card {
+  background: rgba(0, 255, 231, 0.1);
+  border: 2px solid #00ffe7;
+  border-radius: 15px;
+  box-shadow: 0 0 15px #00ffe7;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+}
+
+.blog-card img {
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  object-fit: cover;
+}
+
+.blog-info {
+  padding: 15px;
+  text-align: center;
+}
+
+.blog-info h3 {
+  font-size: 18px;
+  margin: 10px 0;
+}
+
+.blog-info p {
+  font-size: 14px;
+  margin: 30px 0;
+}
+
+.read-btn {
+  margin-top: 30px;
+}
+
+.all-posts-btn {
+  margin-top: 30px;
+}
+
 /* Responsive */
 @media (max-width: 768px) {
   .nav-links {
@@ -306,5 +444,41 @@ nav .nav-links a:hover {
 
   .about-text{
     font-size: 14px;
+  }
+
+  .projects-container {
+    flex-direction: column;
+    align-items: center;
+  }
+  .certificates-wrapper {
+    width: 95%; 
+    max-width: 350px;
+  }
+
+  .certificate-card {
+    padding: 10px; /* padding lebih kecil */
+  }
+
+  .certificate-card img {
+    border-radius: 8px;
+  }
+
+  .certificate-info h3 {
+    font-size: 16px;
+  }
+
+  .certificate-info p {
+    font-size: 12px;
+  }
+
+  .view-btn {
+    padding: 4px 8px;
+    font-size: 12px;
+  }
+
+  .indicator-dots .dot {
+    width: 8px;
+    height: 8px;
+    margin: 0 3px;
   }
 }
