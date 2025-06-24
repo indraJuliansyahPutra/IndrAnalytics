@@ -481,4 +481,16 @@ nav .nav-links a:hover {
     height: 8px;
     margin: 0 3px;
   }
+
+  .blog-wrapper {
+    grid-template-columns: 1fr; /* 1 kolom di HP */
+  }
+
+  .blog-info h3 {
+    font-size: 16px;
+  }
+
+  .blog-info p {
+    font-size: 12px;
+  }
 }
