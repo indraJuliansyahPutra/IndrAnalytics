@@ -412,6 +412,75 @@ nav .nav-links a:hover {
   margin-top: 30px;
 }
 
+/* Contact Section */
+#contact {
+  padding: 100px 50px;
+  background: #000;
+  color: #00ffe7;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.contact-container {
+  width: 80%;
+  max-width: 600px;
+  text-align: center;
+}
+
+.contact-item {
+  margin: 10px 0;
+  font-size: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.contact-item i {
+  margin-right: 10px;
+  font-size: 20px;
+  color: #00ffe7;
+}
+
+.contact-item a {
+  color: #00ffe7;
+  text-decoration: none;
+  font-size: 16px;
+}
+
+.contact-item a:hover {
+  text-decoration: underline;
+  color: #00ff88;
+}
+
+.social-icons {
+  margin-top: 20px;
+}
+
+.social-icons a {
+  margin: 0 10px;
+  color: #00ffe7;
+  font-size: 24px;
+  transition: color 0.3s;
+}
+
+.social-icons a:hover {
+  color: #00ff88;
+}
+
+footer {
+  background-color: #000;
+  color: #00ffe7;
+  padding: 20px 0;
+  text-align: center;
+  position: relative;
+}
+
+.footer-container {
+  width: 80%;
+  margin: 0 auto;
+}
+
 /* Responsive */
 @media (max-width: 768px) {
   .nav-links {
@@ -492,5 +561,18 @@ nav .nav-links a:hover {
 
   .blog-info p {
     font-size: 12px;
+  }
+
+  .contact-item {
+    font-size: 12px;
+  }
+
+  .social-icons a {
+    font-size: 20px;
+    margin: 0 5px;
+  }
+
+  .footer-container{
+    width: 75%;
   }
 }
