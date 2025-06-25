@@ -223,22 +223,16 @@
           <img src="image/project/asl.png" alt="Project 1" />
           <h3>ASL Hand Gesture Detection</h3>
           <p class="category">Computer Vision</p>
-          <a
-            href="https://github.com/indraJuliansyahPutra/ASL-Hand-Gesture-Recognition"
-            class="btn view-project"
-            target="_blank"
-            >View Project</a
+          <a href="#" class="btn preview-project" data-project="asl"
+            >Preview Project</a
           >
         </div>
         <div class="project-card">
           <img src="image/project/cake.png" alt="Project 2" />
           <h3>Cake Image Classification</h3>
           <p class="category">Machine Learning</p>
-          <a
-            href="https://github.com/indraJuliansyahPutra/Klasifikasi-Kue-CNN"
-            class="btn view-project"
-            target="_blank"
-            >View Project</a
+          <a href="#" class="btn preview-project" data-project="cake"
+            >Preview Project</a
           >
         </div>
 
@@ -246,11 +240,8 @@
           <img src="image/project/web-scraping.png" alt="Project 3" />
           <h3>Web Scraping</h3>
           <p class="category">Web Development</p>
-          <a
-            href="https://github.com/indraJuliansyahPutra/Liga-1-Indonesia"
-            class="btn view-project"
-            target="_blank"
-            >View Project</a
+          <a href="#" class="btn preview-project" data-project="scraping"
+            >Preview Project</a
           >
         </div>
 
@@ -259,23 +250,43 @@
           <img src="image/project/dashboard liga 1.png" alt="Project 4" />
           <h3>Statistics Dashboard Liga 1 Indonesia</h3>
           <p class="category">Data Visualization, Data Analytics</p>
-          <a href="#" class="btn view-project">View Project</a>
+          <a href="#" class="btn preview-project" data-project="liga1"
+            >Preview Project</a
+          >
         </div>
 
         <div class="project-card hidden">
           <img src="image/project/dashboard BPS.png" alt="Project 5" />
           <h3>BPS Dashboard</h3>
           <p class="category">Data Visualization</p>
-          <a
-            href="https://public.tableau.com/app/profile/indra.juliansyah.putra/viz/DashboardBPS/Penduduk"
-            class="btn view-project"
-            target="_blank"
-            >View Project</a
+          <a href="#" class="btn preview-project" data-project="bps"
+            >Preview Project</a
           >
+      </div>
+      <div class="load-more-container">
+        <button id="load-more" class="btn load-more">Load More</button>
+      </div>
+      
+    </section>
+    <!-- Modals Section -->
+    <div id="projectModal" class="modal">
+      <span class="close">&times;</span>
+      <div class="modal-content">
+        <div class="slider-wrapper">
+          <button class="prev">&#10094;</button>
+          <img id="mainImage" src="" alt="Main Project Image" />
+          <button class="next">&#10095;</button>
+        </div>
+        <p class="project-description">
+          Deskripsi singkat akan tampil di sini.
+        </p>
+        <div class="modal-buttons">
+          <a href="#" class="btn view-project" target="_blank">View Project</a>
+          <button class="btn close-modal">Close</button>
         </div>
       </div>
-      <button id="load-more" class="btn load-more">Load More</button>
-    </section>
+    </div>
+
     <!-- Certificate Section -->
     <section id="certificates">
       <h2 class="section-title">My Certificates</h2>
