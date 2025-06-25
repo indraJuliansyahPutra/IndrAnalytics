@@ -29,8 +29,9 @@ export function initModalsProject() {
     },
     scraping: {
       images: [
-        'image/project/scraping/step 1.png',
-        'image/project/scraping/step 2.png'
+        'image/project/scraping/scrap-data-lib.gif',
+        'image/project/scraping/scrap-data-sofa.gif',
+        'image/project/scraping/scrap-data-trans.gif',
       ],
       description: 'Web scraping data statistik Liga 1 Indonesia dari situs resmi menggunakan Python dan BeautifulSoup, lalu disimpan dalam format terstruktur untuk analisis dan visualisasi lanjutan.',
       github: 'https://github.com/indraJuliansyahPutra/Liga-1-Indonesia'
@@ -45,9 +46,6 @@ export function initModalsProject() {
     liga1: {
       images: [
         'image/project/liga-1/video.gif',
-        'image/project/liga-1/scrap-data-lib.gif',
-        'image/project/liga-1/scrap-data-sofa.gif',
-        'image/project/liga-1/scrap-data-trans.gif',
       ],
       description: 'Dashboard statistik Liga 1 Indonesia menggunakan Power BI yang menampilkan performa pemain, distribusi gol, assist, kartu, dan metrik lainnya, hasil dari data hasil scraping yang telah dibersihkan.',
       github: 'https://github.com/indraJuliansyahPutra/Liga-1-Indonesia'
