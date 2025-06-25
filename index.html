@@ -582,11 +582,18 @@
         </div>
       </div>
     </section>
+    <button id="backToTop" title="Back to Top">&#8679;</button>
     <footer>
       <div class="footer-container">
         <p>&copy; 2025 Indra Juliansyah Putra. All Rights Reserved.</p>
       </div>
     </footer>
     <script type="module" src="js/main.js"></script>
+    <script>
+      if (performance.navigation.type === 1 && window.location.hash) {
+        window.location.href =
+          window.location.origin + window.location.pathname;
+      }
+    </script>
   </body>
 </html>
