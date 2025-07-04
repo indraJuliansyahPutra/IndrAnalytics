@@ -613,7 +613,7 @@ nav .nav-links a:hover {
 /* Youtube Section */
 #watch-video {
   background-color: #000;
-  padding: 100px 50px;
+  padding: 80px 30px;
   text-align: center;
   color: #fff;
 }
@@ -625,14 +625,14 @@ nav .nav-links a:hover {
   text-shadow: 0 0 10px #00ffe7;
 }
 
-.video-wrapper {
+.video-container {
   display: flex;
   justify-content: center;
   align-items: center;
   overflow: hidden;
 }
 
-.video-wrapper iframe {
+.video-container iframe {
   width: 100%;
   max-width: 800px;
   height: 450px; /* Tinggi default YouTube HD */
@@ -902,6 +902,15 @@ footer {
 
   .blog-info p {
     font-size: 12px;
+  }
+
+  #watch-video .section-title {
+    font-size: 1.5rem;
+  }
+
+  .video-container {
+    max-width: 100%;
+    aspect-ratio: 16 / 9;
   }
 
   .contact-item {
