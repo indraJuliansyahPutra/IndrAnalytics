@@ -40,8 +40,8 @@ export function initModalsProject() {
       images: [
         'image/project/bps/video.gif',
       ],
-      description: 'Dashboard interaktif menggunakan Tableau untuk menampilkan data kependudukan Provinsi Sumatera Selatan berdasarkan data dari Badan Pusat Statistik (BPS), mencakup persebaran jumlah penduduk, rasio jenis kelamin, dan komposisi usia.',
-      github: 'https://github.com/indraJuliansyahPutra/Liga-1-Indonesia'
+      description: "Dashboard ini menggunakan Tableau untuk menampilkan data sektor-sektor utama di Provinsi Sumatera Selatan berdasarkan data BPS, mencakup kependudukan, pendidikan, kesehatan, serta pertanian dan perkebunan.",
+      github: 'https://public.tableau.com/app/profile/indra.juliansyah.putra/viz/DashboardBPSSumateraSelatan/Kependudukan'
     },
     liga1: {
       images: [
