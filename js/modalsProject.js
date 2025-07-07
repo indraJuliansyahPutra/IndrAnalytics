@@ -48,7 +48,7 @@ export function initModalsProject() {
         'image/project/liga-1/video.gif',
       ],
       description: 'Dashboard statistik Liga 1 Indonesia menggunakan Power BI yang menampilkan performa pemain, distribusi gol, assist, kartu, dan metrik lainnya, hasil dari data hasil scraping yang telah dibersihkan.',
-      github: 'https://github.com/indraJuliansyahPutra/Liga-1-Indonesia'
+      github: 'https://public.tableau.com/app/profile/indra.juliansyah.putra/viz/DashboardBPSSumateraSelatan/Kependudukan'
     }
   };
 
