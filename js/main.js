@@ -6,6 +6,7 @@ import { slideCertificate } from './slideCertificate.js';
 import { initModalsProject } from './modalsProject.js';
 import { removeSections } from './sections.js';
 import { faqAnswer } from './faqAnswer.js';
+import { initChatBot } from './chatBot.js';
 
 document.addEventListener('DOMContentLoaded', () => {
   initHamburgerMenu();
@@ -16,4 +17,5 @@ document.addEventListener('DOMContentLoaded', () => {
   initModalsProject();
   removeSections();
   faqAnswer();
+  initChatBot();
 });
