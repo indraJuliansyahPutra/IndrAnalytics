@@ -21,7 +21,7 @@ app.post("/chat", async (req, res) => {
     const response = await axios.post(
         `${process.env.OPENAI_API_BASE_URL}/chat/completions`,
         {
-            model: "gpt-4o", // atau gpt-3.5-turbo
+            model: "gpt-4o",
             messages: [
             {
                 role: "system",
