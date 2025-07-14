@@ -56,20 +56,18 @@ exports.handler = async function (event, context) {
 
   const { message } = JSON.parse(event.body);
 
+  // Konten prompt
+  const systemPrompt = `Kamu adalah asisten pribadi dari Indra Juliansyah Putra. Berikut ini informasi tentang dia:\n\n${aboutMe}\n\nJawablah semua pertanyaan tentang Indra dengan jelas, profesional, dan informatif. Gunakan sudut pandang orang ketiga. Misalnya, gunakan kata 'Indra' bukan 'saya'.`;
+
+  // Coba pakai OpenAI API dulu
   try {
     const response = await axios.post(
       `${process.env.OPENAI_API_BASE_URL}/chat/completions`,
       {
         model: "gpt-4o",
         messages: [
-          {
-            role: "system",
-            content: `Kamu adalah asisten pribadi dari Indra Juliansyah Putra. Berikut ini informasi tentang dia:\n\n${aboutMe}\n\nJawablah semua pertanyaan tentang Indra dengan jelas, profesional, dan informatif. Gunakan sudut pandang orang ketiga. Misalnya, gunakan kata 'Indra' bukan 'saya'.`,
-          },
-          {
-            role: "user",
-            content: message,
-          },
+          { role: "system", content: systemPrompt },
+          { role: "user", content: message },
         ],
       },
       {
@@ -81,17 +79,43 @@ exports.handler = async function (event, context) {
     );
 
     const reply = response.data.choices[0].message.content;
-
     return {
       statusCode: 200,
       body: JSON.stringify({ reply }),
     };
-  } catch (error) {
-    console.error("OpenAI API error:", error?.response?.data || error.message);
+  } catch (openaiError) {
+    console.error("OpenAI API error. Coba fallback ke Groq...");
 
-    return {
-      statusCode: 500,
-      body: JSON.stringify({ reply: "Maaf, terjadi kesalahan saat menjawab." }),
-    };
+    // Fallback ke Groq
+    try {
+      const response = await axios.post(
+        `${process.env.GROQ_API_BASE_URL}/chat/completions`,
+        {
+          model: "llama3-70b-8192",
+          messages: [
+            { role: "system", content: systemPrompt },
+            { role: "user", content: message },
+          ],
+        },
+        {
+          headers: {
+            "Content-Type": "application/json",
+            Authorization: `Bearer ${process.env.GROQ_API_KEY}`,
+          },
+        }
+      );
+
+      const reply = response.data.choices[0].message.content;
+      return {
+        statusCode: 200,
+        body: JSON.stringify({ reply }),
+      };
+    } catch (groqError) {
+      console.error("Groq API error:", groqError?.response?.data || groqError.message);
+      return {
+        statusCode: 500,
+        body: JSON.stringify({ reply: "Maaf, tidak dapat menjawab sekarang. Silakan coba lagi nanti." }),
+      };
+    }
   }
 };
