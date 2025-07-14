@@ -88,8 +88,8 @@ exports.handler = async function (event, context) {
 
     // Fallback ke Groq
     try {
-      const response = await axios.post(
-        `${process.env.GROQ_API_BASE_URL}/chat/completions`,
+      const baseUrl = process.env.GROQ_API_BASE_URL.replace(/\/+$/, "");
+      const response = await axios.post(`${baseUrl}/chat/completions`,
         {
           model: "llama3-70b-8192",
           messages: [
