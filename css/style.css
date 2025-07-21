@@ -259,6 +259,14 @@ nav .nav-links a:hover {
   position: relative;
 }
 
+.btn.education {
+  font-size: 13px;
+  padding: 5px 10px;
+  display: inline-block;
+  margin-top: 16px;
+  border-radius: 10px;
+}
+
 .timeline-content.right {
   text-align: left;
 }
