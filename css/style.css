@@ -853,12 +853,14 @@ footer {
 }
 
 .chat-body {
-  flex: 1;
+  display: flex;
+  flex-direction: column;
   padding: 10px;
   overflow-y: auto;
   font-size: 14px;
   color: #fff;
 }
+
 
 .chat-body .bot-message,
 .chat-body .user-message {
@@ -866,20 +868,23 @@ footer {
   padding: 8px 10px;
   border-radius: 10px;
   max-width: 80%;
+  width: fit-content;
+  word-break: break-word;
 }
 
 .bot-message {
   background-color: #00ffe7;
   color: #000;
-  align-self: flex-start;
+  align-self: flex-start; /* kiri */
 }
 
 .user-message {
   background-color: #333;
   color: #00ffe7;
-  align-self: flex-end;
+  align-self: flex-end; /* kanan */
   text-align: right;
 }
+
 
 .chat-input {
   display: flex;
