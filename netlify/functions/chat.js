@@ -91,7 +91,7 @@ exports.handler = async function (event, context) {
       const baseUrl = process.env.GROQ_API_BASE_URL.replace(/\/+$/, "");
       const response = await axios.post(`${baseUrl}/chat/completions`,
         {
-          model: "llama3-70b-8192",
+          model: "llama-3.1-8b-instant",
           messages: [
             { role: "system", content: systemPrompt },
             { role: "user", content: message },
